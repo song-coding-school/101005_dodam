@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>도담이의 햄스터 로봇 코딩</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="./favicon.png" rel="icon" />
+
+    <!-- 오픈 그래프 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="도담이의 햄스터 로봇 코딩" />
+    <meta property="og:title" content="도담이의 햄스터 로봇 코딩" />
+    <meta
+      property="og:description"
+      content="도담이의 햄스터 로봇 코딩 (햄찌의 모험 : 잃어버린 엄마를 찾아서)"
+    />
+    <meta property="og:image" content="./img/certificate/certificate.png" />
+    <!-- <meta property="og:url" content="https://" /> -->
+
+    <!-- 트위터 카드-->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="도담이의 햄스터 로봇 코딩" />
+    <meta property="twitter:title" content="도담이의 햄스터 로봇 코딩" />
+    <meta
+      property="twitter:description"
+      content="도담이의 햄스터 로봇 코딩 (햄찌의 모험 : 잃어버린 엄마를 찾아서)"
+    />
+    <meta property="twitter:image" content="./img/certificate/certificate.png" />
+    <!-- <meta property="twitter:url" content="https://" /> -->
+
+    <!-- 구글 아이콘 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- JS 라이브러리-->
+    <!-- gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- gsap-scrollTo -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"
+      integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- youtube -->
+    <script defer src="./js/youtube.js"></script>
+    <!-- 라이트박스 겔러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.min.js"></script>
+    <!-- common.js & main.js -->
+    <script defer src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <header></header>
+
+    <!-- 메인 화면 -->
+    <section class="main">
+      <div class="inner">
+        <div class="headerBar main__headerBar">도담이의 햄스터 로봇 코딩</div>
+        <div class="mainImage">햄찌의 모험 - 메인 이미지</div>
+        <div class="back2"></div>
+        <div class="audioBtn">
+          <div class="audioBtnPlay">
+            <div class="material-symbols-outlined">play_circle</div>
+          </div>
+          <div class="audioBtnPause hidden">
+            <div class="material-symbols-outlined">pause_circle</div>
+          </div>
+        </div>
+
+        <div class="fade-in">
+          <img src="img/main/mama.png" alt="햄찌엄마" class="mama" />
+        </div>
+        <div class="fade-in">
+          <img src="img/main/hamzzi.png" alt="햄찌" class="hamzzi" />
+        </div>
+        <div class="fade-in title">
+          <img src="img/main/main_title.png" alt="타이틀" class="mainTitle" />
+        </div>
+        <div class="fade-in title">
+          <img
+            src="img/main/sub_title.png"
+            alt="서브 타이틀"
+            class="subTitle"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 목차 및 스테이지 -->
+    <section class="index">
+      <div class="inner">
+        <div class="stageIndex">
+          <div class="headerBar">스테이지 목록</div>
+        </div>
+
+        <div class="stage1">
+          <div class="titleBox">
+            <div class="titleBox__inner">
+              <div class="stageImg">
+                <img src="img/stage1/maze.png" alt="" class="stageImg" />
+              </div>
+              <div class="stageTitle">
+                <div class="stageSubTitle">첫 번째 스테이지</div>
+                <div class="stageMainTitle">미로 던전 통과하기</div>
+              </div>
+              <div class="material-symbols-outlined btnDrop">
+                arrow_drop_down_circle
+              </div>
+            </div>
+          </div>
+          <div class="stageContentsWraper">
+            <div class="stageContents hiddenStage">
+              <div class="stage__question question1">
+                <div class="stage__hamzzi">
+                  <img src="img/common/hamzzi.png" alt="햄찌" />
+                </div>
+                <div class="stage__question__textBox">
+                  <p>< 햄찌 ></p>
+                  <p>
+                    도담아 엄마를 찾아야 되는데 미로가 있어, 내가
+                    잔디블록으로만 갈 수 있도록 도와줘 ㅠ.ㅠ
+                  </p>
+                  <div class="minimap">
+                    <img src="img/stage1/stage1_map.jpg" alt="미니맵" />
+                  </div>
+                </div>
+              </div>
+              <div class="stage__solution solution1">
+                <div class="stage__student">
+                  <img src="img/common/boy.png" alt="도담" />
+                </div>
+                <div class="stage__solution__textBox">
+                  <p>< 도담 ></p>
+                  <p>걱정마! 햄찌야!</p>
+                  <p>'이동 블록'을 사용하면 널 쉽게 움직일 수 있을거야!</p>
+                  <img
+                    src="img/stage1/stage1_codeblock.png"
+                    alt=""
+                    class="stageCodeblock"
+                  />
+                  <p>
+                    앞으로 가게한 뒤, 왼쪽 또는 오른쪽으로 돌게하고 다시 앞으로
+                    움직여보자!
+                  </p>
+                </div>
+              </div>
+              <div class="stage__source source1">
+                <div class="stage__student">
+                  <img src="img/common/boy.png" alt="도담" />
+                </div>
+                <div class="stage__source__textBox">
+                  <p>< 도담 ></p>
+                  <p>이게 완성된 소스야!!</p>
+                  <img
+                    src="img/stage1/stage1_source.png"
+                    alt=""
+                    class="stageSourceImg"
+                  />
+                </div>
+              </div>
+              <div class="stage__video video">
+                <div class="stage__hamzzi">
+                  <img src="img/common/hamzzi.png" alt="햄찌" />
+                </div>
+                <div class="stage__video__textBox">
+                  <p>< 햄찌 ></p>
+                  <p>얏호! 고마워 도담아~ 이제 여길 통과 할 수 있어</p>
+                  <div class="video__area">
+                    <div id="player1" class="player"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage2">
+          <div class="titleBox">
+            <div class="titleBox__inner">
+              <div class="stageImg">
+                <img src="img/stage2/code.png" alt="" class="stageImg" />
+              </div>
+              <div class="stageTitle">
+                <div class="stageSubTitle">두 번째 스테이지</div>
+                <div class="stageMainTitle">암호 던전 통과하기</div>
+              </div>
+              <div class="material-symbols-outlined btnDrop btnDrop--inactive">
+                arrow_drop_down_circle
+              </div>
+            </div>
+          </div>
+          <div class="stageContentsWraper">
+            <div class="stageContents hiddenStage">
+              <div class="stage__question question2">
+                <div class="stage__hamzzi">
+                  <img src="img/common/hamzzi.png" alt="햄찌" />
+                </div>
+                <div class="stage__question__textBox">
+                  <p>< 햄찌 ></p>
+                  <p>
+                    도담아 이번엔 바닥색이 암호인 던전이야, 내 LED를 같은
+                    색으로 점등해서 앞으로 나가면 통과할 수 있을 것 같아!!!
+                    이번에도 도와 줄 거지?
+                  </p>
+                  <div class="minimap">
+                    <img src="img/stage2/stage2_map.jpg" alt="미니맵" />
+                  </div>
+                </div>
+              </div>
+              <div class="stage__solution solution2">
+                <div class="stage__student">
+                  <img src="img/common/boy.png" alt="도담" />
+                </div>
+                <div class="stage__solution__textBox">
+                  <p>< 도담 ></p>
+                  <p>물론이지!!</p>
+                  <p>
+                    이번에는 전에 사용한 '이동 블록'과 'LED를 점등 블록'을 같이
+                    사용하면 문제 없을거야!
+                  </p>
+                  <img
+                    src="img/stage2/stage2_codeblock.png"
+                    alt=""
+                    class="stageCodeblock"
+                  />
+                  <p>
+                    양쪽 LED 불빛을 바닥색과 맞춰서 점등하고, 1초 기다렸다가 앞
+                    또는 좌우로 회전하는 과정을 반복해보자!! 쉽지?
+                  </p>
+                </div>
+              </div>
+              <div class="stage__source source2">
+                <div class="stage__student">
+                  <img src="img/common/boy.png" alt="도담" />
+                </div>
+                <div class="stage__source__textBox">
+                  <p>< 도담 ></p>
+                  <p>소스가 완성되었어!! 이번에도 어럽지 않았지?</p>
+                  <img
+                    src="img/stage2/stage2_source.png"
+                    alt=""
+                    class="stageSourceImg"
+                  />
+                </div>
+              </div>
+              <div class="stage__video video">
+                <div class="stage__hamzzi">
+                  <img src="img/common/hamzzi.png" alt="햄찌" />
+                </div>
+                <div class="stage__video__textBox">
+                  <p>< 햄찌 ></p>
+                  <p>네 덕분에 이번에도 가뿐하게 통과했어!! 신난다!~</p>
+                  <div class="video__area">
+                    <div id="player2" class="player"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage3">
+          <div class="titleBox">
+            <div class="titleBox__inner">
+              <div class="stageImg">
+                <img src="img/stage3/river.png" alt="" class="stageImg" />
+              </div>
+              <div class="stageTitle">
+                <div class="stageSubTitle">세 번째 스테이지</div>
+                <div class="stageMainTitle">안전하게 강 건너기</div>
+              </div>
+              <div class="material-symbols-outlined btnDrop btnDrop--inactive">
+                arrow_drop_down_circle
+              </div>
+            </div>
+          </div>
+          <div class="stageContentsWraper">
+            <div class="stageContents hiddenStage">
+              <div class="stage__question question3">
+                <div class="stage__hamzzi">
+                  <img src="img/common/hamzzi.png" alt="햄찌" />
+                </div>
+                <div class="stage__question__textBox">
+                  <p>< 햄찌 ></p>
+                  <p>친구야 이번엔 이 강을 건너야해!!</p>
+                  <p>
+                    수심이 얕은 곳에 길이 나있어, 검은색 선을 긋고 그 선을
+                    따라가면 될 것 같아
+                  </p>
+                  <p>또는, 네 손바닥으로 물을 막아주면 길이 생길 것 같아</p>
+                  <div class="minimap">
+                    <img src="img/stage3/stage3_map.jpg" alt="미니맵" />
+                  </div>
+                </div>
+              </div>
+              <div class="stage__solution solution3">
+                <div class="stage__student">
+                  <img src="img/common/boy.png" alt="도담" />
+                </div>
+                <div class="stage__solution__textBox">
+                  <p>< 도담 ></p>
+                  <p>이번에는 '순환 블록'과 '조건 블록'을 사용해보자.</p>
+                  <p>'순환 블록'은 같은 코드를 반복하는 블록이야</p>
+                  <img
+                    src="img/stage3/stage3_codeblock1.png"
+                    alt=""
+                    class="stageCodeblock"
+                  />
+                  <p>
+                    그리고 '조건 블록'은 어떤 조건을 걸고 그 조건이 '참말'인지
+                    '거짓말'인지 분별하는 블록이지!
+                  </p>
+                  <img
+                    src="img/stage3/stage3_codeblock2.png"
+                    alt=""
+                    class="stageCodeblock"
+                  />
+                  <p>
+                    검은색 선을 한번만 따라가지 않고, 계속 따라가야니깐 '순환
+                    블록'을 써야겠지? 그리고 손으로 강물을 손으로 막았을
+                    경우(참말)일 경우에만 코드를 실행하기 위해서는 '조건 블록'이
+                    필요할 거야!!
+                  </p>
+                </div>
+              </div>
+              <div class="stage__source source3">
+                <div class="stage__student">
+                  <img src="img/common/boy.png" alt="도담" />
+                </div>
+                <div class="stage__source__textBox">
+                  <p>< 도담 ></p>
+                  <p>
+                    완성된 소스야!! 이번엔 매우 중요한 '조건 블록'과 '순환
+                    블록'을 공부했어
+                  </p>
+                  <img
+                    src="img/stage3/stage3_source.png"
+                    alt=""
+                    class="stageSourceImg"
+                  />
+                </div>
+              </div>
+              <div class="stage__video video">
+                <div class="stage__hamzzi">
+                  <img src="img/common/hamzzi.png" alt="햄찌" />
+                </div>
+                <div class="stage__video__textBox">
+                  <p>< 햄찌 ></p>
+                  <p>이번에도 성공이야~~</p>
+                  <div class="video__area">
+                    <div id="player3" class="player"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage4">
+          <div class="titleBox">
+            <div class="titleBox__inner">
+              <div class="stageImg">
+                <img src="img/stage4/trash.png" alt="" class="stageImg" />
+              </div>
+              <div class="stageTitle">
+                <div class="stageSubTitle">네 번째 스테이지</div>
+                <div class="stageMainTitle">청소하며 길 건너기</div>
+              </div>
+              <div class="material-symbols-outlined btnDrop btnDrop--inactive">
+                arrow_drop_down_circle
+              </div>
+            </div>
+          </div>
+          <div class="stageContentsWraper">
+            <div class="stageContents hiddenStage">
+              <div class="stage__question question4">
+                <div class="stage__hamzzi">
+                  <img src="img/common/hamzzi.png" alt="햄찌" />
+                </div>
+                <div class="stage__question__textBox">
+                  <p>< 햄찌 ></p>
+                  <p>힝~ 주변이 너무 더러워서 길을 못 찾겠어.</p>
+                  <p>청소부터하지 않으면 길을 영영 못찾을 것 같아 ㅠ.ㅠ</p>
+                  <div class="minimap">
+                    <img src="img/stage4/stage4_map.jpg" alt="미니맵" />
+                  </div>
+                </div>
+              </div>
+              <div class="stage__solution solution4">
+                <div class="stage__student">
+                  <img src="img/common/boy.png" alt="도담" />
+                </div>
+                <div class="stage__solution__textBox">
+                  <p>< 도담 ></p>
+                  <p>
+                    걱정하지마 햄찌야~ '서보 모터'에 빗자루를 달아서 청소해보자
+                  </p>
+                  <p>
+                    그리고 '소리 센서'도 사용해서 내가 목소리(아날로그 신호)를
+                    내면 바로 반응할 수 있도록 도와줄게!!
+                  </p>
+                  <br />
+                  <p>
+                    우선 '서보 모터' 사용 예시야!! B포트에 서보모터를 연결하고
+                    출력을 1과 30으로 교차하게 하면 빗자루가 왔다갔다 하겠지?
+                  </p>
+                  <img
+                    src="img/stage4/stage4_codeblock1.png"
+                    alt=""
+                    class="stageCodeblock"
+                  />
+                  <p>
+                    그리고 소리센서가 80이상의 '아날로그 음성 신호 강도'를
+                    감지하면 반응하도록 하면 이렇게 될거야!!
+                  </p>
+                  <img
+                    src="img/stage4/stage4_codeblock2.png"
+                    alt=""
+                    class="stageCodeblock"
+                  />
+                </div>
+              </div>
+              <div class="stage__source source4">
+                <div class="stage__student">
+                  <img src="img/common/boy.png" alt="도담" />
+                </div>
+                <div class="stage__source__textBox">
+                  <p>< 도담 ></p>
+                  <p>이번엔 좀 어려웠어!!! 하지만 좀 뿌듯 한걸? ㅎㅎㅎ</p>
+                  <img
+                    src="img/stage4/stage4_source.png"
+                    alt=""
+                    class="stageSourceImg"
+                  />
+                </div>
+              </div>
+              <div class="stage__video video">
+                <div class="stage__hamzzi">
+                  <img src="img/common/hamzzi.png" alt="햄찌" />
+                </div>
+                <div class="stage__video__textBox">
+                  <p>< 햄찌 ></p>
+                  <p>청소하니 길이 보이기 시작했어!!!</p>
+                  <div class="video__area">
+                    <div id="player4" class="player"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage5">
+          <div class="titleBox">
+            <div class="titleBox__inner">
+              <div class="stageImg">
+                <img src="img/stage5/sing.png" alt="" class="stageImg" />
+              </div>
+              <div class="stageTitle">
+                <div class="stageSubTitle">다섯 번째 스테이지</div>
+                <div class="stageMainTitle">노래로 몹 재우기</div>
+              </div>
+              <div class="material-symbols-outlined btnDrop btnDrop--inactive">
+                arrow_drop_down_circle
+              </div>
+            </div>
+          </div>
+          <div class="stageContentsWraper">
+            <div class="stageContents hiddenStage">
+              <div class="stage__question question5">
+                <div class="stage__hamzzi">
+                  <img src="img/common/hamzzi.png" alt="햄찌" />
+                </div>
+                <div class="stage__question__textBox">
+                  <p>< 햄찌 ></p>
+                  <p>바로 앞에 무서운 몹이 가로막고 있어!!</p>
+                  <p>어떻게 지나갈 수 있을까?</p>
+                  <div class="minimap">
+                    <img src="img/stage5/stage5_map.jpg" alt="미니맵" />
+                  </div>
+                </div>
+              </div>
+              <div class="stage__solution solution5">
+                <div class="stage__student">
+                  <img src="img/common/boy.png" alt="도담" />
+                </div>
+                <div class="stage__solution__textBox">
+                  <p>< 도담 ></p>
+                  <p>
+                    햄찌가 자장가를 불러서 몹이 잠들면, 그 사이에 얼른 지나가자!
+                  </p>
+                  <p>네가 자장가를 부를 수 있도록 도와줄게!!</p>
+                  <br />
+                  <p>
+                    여기 연주속도와 음에 따라 박자까지 정할 수 있는 코드블록이
+                    있어
+                  </p>
+                  <p>이 코드블록을 이용해서 '작은 별' 노래를 불러보자</p>
+                  <img
+                    src="img/stage5/stage5_codeblock.png"
+                    alt=""
+                    class="stageCodeblock"
+                  />
+                </div>
+              </div>
+              <div class="stage__source source5">
+                <div class="stage__student">
+                  <img src="img/common/boy.png" alt="도담" />
+                </div>
+                <div class="stage__source__textBox">
+                  <p>< 도담 ></p>
+                  <p>
+                    노래를 완성했어!!! 반짝~ 반짝~ 작은~별 아름답게 비추네^^
+                  </p>
+                  <img
+                    src="img/stage5/stage5_source.png"
+                    alt=""
+                    class="stageSourceImg"
+                  />
+                </div>
+              </div>
+              <div class="stage__video video">
+                <div class="stage__hamzzi">
+                  <img src="img/common/hamzzi.png" alt="햄찌" />
+                </div>
+                <div class="stage__video__textBox">
+                  <p>< 햄찌 ></p>
+                  <p>몹이 잠들었어! 서둘러 지나가자!!</p>
+                  <div class="video__area">
+                    <div id="player5" class="player"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage6">
+          <div class="titleBox">
+            <div class="titleBox__inner">
+              <div class="stageImg">
+                <img src="img/stage6/mob.png" alt="" class="stageImg" />
+              </div>
+              <div class="stageTitle">
+                <div class="stageSubTitle">여섯 번째 스테이지</div>
+                <div class="stageMainTitle">몹 피하며 던전 탈출</div>
+              </div>
+              <div class="material-symbols-outlined btnDrop btnDrop--inactive">
+                arrow_drop_down_circle
+              </div>
+            </div>
+          </div>
+          <div class="stageContentsWraper">
+            <div class="stageContents hiddenStage">
+              <div class="stage__question question6">
+                <div class="stage__hamzzi">
+                  <img src="img/common/hamzzi.png" alt="햄찌" />
+                </div>
+                <div class="stage__question__textBox">
+                  <p>< 햄찌 ></p>
+                  <p>
+                    이제 마지막 스테이지야!! 움직이는 몹들을 피해서 통과해야
+                    해!!
+                  </p>
+                  <p>'대시보드'를 이용해서 날 움직여 줄 수 있겠니?</p>
+                  <div class="minimap">
+                    <img src="img/stage6/stage6_map.jpg" alt="미니맵" />
+                  </div>
+                </div>
+              </div>
+              <div class="stage__solution solution6">
+                <div class="stage__student">
+                  <img src="img/common/boy.png" alt="도담" />
+                </div>
+                <div class="stage__solution__textBox">
+                  <p>< 도담 ></p>
+                  <p>
+                    햄찌가 위, 아래, 좌, 우로 움직일 수 있도록 화살표 버튼을
+                    만들어 줄게!
+                  </p>
+                  <p>
+                    제자리에서 왼쪽으로 돌때는, 왼쪽 바퀴를 뒤로 움직이고 오른쪽
+                    바퀴를 앞으로 움직이면 될거야!!
+                  </p>
+
+                  <img
+                    src="img/stage6/stage6_dashboard.png"
+                    alt=""
+                    class="stageCodeblock"
+                  />
+                </div>
+              </div>
+              <div class="stage__source source6">
+                <div class="stage__student">
+                  <img src="img/common/boy.png" alt="도담" />
+                </div>
+                <div class="stage__source__textBox">
+                  <p>< 도담 ></p>
+                  <p>
+                    대시보드와 방향키로 움직이는 코드를 만들었어! 이걸로 널
+                    움직여줄게!!
+                  </p>
+                  <img
+                    src="img/stage6/stage6_source.png"
+                    alt=""
+                    class="stageSourceImg"
+                  />
+                </div>
+              </div>
+              <div class="stage__video video">
+                <div class="stage__hamzzi">
+                  <img src="img/common/hamzzi.png" alt="햄찌" />
+                </div>
+                <div class="stage__video__textBox">
+                  <p>< 햄찌 ></p>
+                  <p>몹을 피해 날 움직여줘!!!</p>
+                  <div class="video__area">
+                    <div id="player6" class="player"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 소감 -->
+    <section class="thoughts">
+      <div class="inner">
+        <div class="headerBar">소감</div>
+        <div class="thoughts__frame">
+          <ul>
+            <li class="question">햄스터 로봇 코딩은 쉬웠나요? 어려웠나요?</li>
+            <li class="answer">어려웠어요...</li>
+            <li class="question">수업 중 무엇이 가장 재미있었나요?</li>
+            <li class="answer">글쎄요.....?</li>
+            <li class="question">수업 중 무엇이 가장 어려웠나요?</li>
+            <li class="answer">전부 다요.</li>
+            <li class="question">장래 희망은 무엇인가요?</li>
+            <li class="answer">상온 초전도체 개발자요</li>
+            <li class="question">마지막으로 선생님에게 하고 싶은 이야기가 있나요?</li>
+            <li class="answer">간식으로 홍삼젤리는 너무하지 말입니다.(엄근진)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 수료증 -->
+    <section class="certificate">
+      <div class="inner">
+        <div class="headerBar">수료증</div>
+        <div class="certificate__frame">
+          <img src="img/certificate/certificate.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 갤러리 -->
+    <section class="gallery">
+      <div class="inner">
+        <div class="headerBar">사진첩</div>
+        <div class="gallery__contents">
+          <img src="img/gallery/pic1.jpg" alt="Image" class="pic" />
+          <img src="img/gallery/pic2.jpg" alt="swamp" class="pic" />
+          <img src="img/gallery/pic3.jpg" alt="swamp" class="pic" />
+          <img src="img/gallery/pic4.jpg" alt="swamp" class="pic" />
+          <img src="img/gallery/pic5.jpg" alt="swamp" class="pic" />
+          <img src="img/gallery/pic6.jpg" alt="swamp" class="pic" />
+          <img src="img/gallery/pic7.jpg" alt="swamp" class="pic" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>Copyright © 2023 서도담 All Rights Reserved.</div>
+      <div class="school">송코치의 코딩스쿨</div>
+    </footer>
+  </body>
+</html>
